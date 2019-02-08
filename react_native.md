@@ -1,9 +1,9 @@
 <h4>Flat List</h4>
 
-<FlatList
-data={this.props.libraries}
-renderItem={this.renderItem}
-keyExtractor={library => library.id.toString()}
+<FlatList <br>
+data={this.props.libraries} <br>
+renderItem={this.renderItem} <br>
+keyExtractor={library => library.id.toString()} <br>
 />
 
 - Must turn the "key" to string
