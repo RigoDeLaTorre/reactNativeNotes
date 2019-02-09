@@ -1,7 +1,12 @@
 <h4>Console Log</h4>
 - react-native log-android
+- To debug on new window...Press Cmd + M on emulator screen
+    Go to Dev settings > Debug server host & port for device
+    Set localhost:8081
+    Then set it to remote js debugging
 
-<h4>Flat List</h4>
+
+<h2>Flat List</h2>
 
 <FlatList <br>
 data={this.props.libraries} <br>
@@ -34,5 +39,6 @@ UIManager.setLayoutAnimationEnabledExperimental(true);
       -import firebase from "@firebase/app";
       -import "@firebase/auth";
 
-<h4>Input</h4>
+<h2>Input</h2>
   -secureTextEntry to turn pass into astericks
+  -onChangeText  ...ex similar to reacts onChange on an input.
