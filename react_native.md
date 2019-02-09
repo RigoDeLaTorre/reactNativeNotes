@@ -27,3 +27,12 @@ UIManager.setLayoutAnimationEnabledExperimental &&
 UIManager.setLayoutAnimationEnabledExperimental(true);
 }
 -Then call it on componentWillUpdate as you would with ios .. LayoutAnimation.spring()
+
+<h4>Firebase</h4>
+- Some issues with basic setup, v 5.0.3 didnt work
+- instead of import firebase from "firebase", use
+      -import firebase from "@firebase/app";
+      -import "@firebase/auth";
+
+<h4>Input</h4>
+  -secureTextEntry to turn pass into astericks
