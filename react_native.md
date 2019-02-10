@@ -5,7 +5,6 @@
     Set localhost:8081
     Then set it to remote js debugging
 
-
 <h2>Flat List</h2>
 
 <FlatList <br>
@@ -42,3 +41,13 @@ UIManager.setLayoutAnimationEnabledExperimental(true);
 <h2>Input</h2>
   -secureTextEntry to turn pass into astericks
   -onChangeText  ...ex similar to reacts onChange on an input.
+
+<h2>Navigation</h2>
+- react-native-router-flux
+    -<Scene
+        - key="login" component={LoginForm}
+         - title="Login (navbar title)"
+          - initial , shows initial scene
+
+<h2>Inline Styling</h2>
+  - You can pass in multiple sytles, the latter will over-ride the former. Ex: style={[styles.first, styles.second]}
