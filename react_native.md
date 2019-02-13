@@ -7,6 +7,13 @@
 
 <h2>Flat List</h2>
 
+<h4>ListView</h4>
+  - boilerplate is
+  -    const ds = new ListView.DataSource({
+      rowHasChanged: (r1, r2) => r1 !== r2
+    });
+    this.dataSource = ds.cloneWithRows(employees);
+
 <FlatList <br>
 data={this.props.libraries} <br>
 renderItem={this.renderItem} <br>
@@ -51,3 +58,17 @@ UIManager.setLayoutAnimationEnabledExperimental(true);
 
 <h2>Inline Styling</h2>
   - You can pass in multiple sytles, the latter will over-ride the former. Ex: style={[styles.first, styles.second]}
+
+<h2>Setting a timer for a long period of time, ie multiple minutes error</h2>
+<h4>To fix this , put the followin in codebase</h4>
+
+import { YellowBox } from 'react-native';
+import \_ from 'lodash';
+
+YellowBox.ignoreWarnings(['Setting a timer']);
+const _console = _.clone(console);
+console.warn = message => {
+if (message.indexOf('Setting a timer') <= -1) {
+\_console.warn(message);
+}
+};
